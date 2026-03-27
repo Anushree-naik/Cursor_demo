@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tetris — Play</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Tetris</h1>
+    <div class="hud">
+      <p>Score: <span id="score">0</span></p>
+      <p>Lines: <span id="lines">0</span></p>
+    </div>
+    <canvas id="game" width="300" height="600" aria-label="Tetris playfield"></canvas>
+    <p id="status" class="status" hidden>Game over — refresh to play again</p>
+    <p class="hint">
+      <kbd>←</kbd><kbd>→</kbd> move · <kbd>↓</kbd> soft drop · <kbd>↑</kbd> rotate
+    </p>
+    <p class="back"><a href="index.html">← Back to home</a></p>
+  </main>
+  <script src="tetris.js"></script>
+</body>
+</html>
